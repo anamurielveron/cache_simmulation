@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --primary: #243d5c;
+    --secondary: #5d7275;
+    --tertiary: #5c8b93;
+    --accent1: #b03a48;
+    --accent2: #d4804d;
+    --accent3: #3e6958;
+    --text: #2b2821;
+    --highlight: #e0c872;
+    --background: #e3cfb4;
+    --font: 'Roboto Mono', monospace;
+}
+
+body {
+    text-align: center;
+    font-family: var(--font);
+    background-color: var(--background);
+    color: var(--text);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    padding: 0.5%;
+    width: 25vw;
+    font-weight: bolder;
+    font-size: 2vw;
+    color: var(--background);
+    background-color: var(--primary);
+    border: 3px solid var(--primary);
+    border-radius: 25px;
+}
+
+h2 {
+    padding: auto;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+form {
+    padding: 2%;
+    color: var(--text);
+}
+
+input {
+    border-radius: 25px;
+    border: 3px solid var(--primary);
+    font: var(--font);
+    font-size: 0.8vw;
+    background-color: var(--highlight);
+    color: var(--text);
+}
+
+small {
+    color: var(--secondary);
+}
+
+#resultContainer {
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 25px;
+    border: 3px solid var(--primary);
+    font: var(--font);
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--accent1);
+    color: var(--background);
+}
+
+button:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    border: 3px solid var(--primary);
+    float: center;
+    background-color: var(--highlight);
+    font-size: medium;
+    margin: 1%;
+}
+
+table th:not(:last-child),
+table td:not(:last-child) {
+    border-right: 3px solid var(--primary);
+}
+
+table>thead>tr:not(:last-child)>th,
+table>thead>tr:not(:last-child)>td,
+table>tbody>tr:not(:last-child)>th,
+table>tbody>tr:not(:last-child)>td,
+table>tfoot>tr:not(:last-child)>th,
+table>tfoot>tr:not(:last-child)>td,
+table>tr:not(:last-child)>td,
+table>tr:not(:last-child)>th,
+table>thead:not(:last-child),
+table>tbody:not(:last-child),
+table>tfoot:not(:last-child) {
+    border-bottom: 3px solid var(--primary);
+}

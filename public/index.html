@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>CACHE SIMMULATOR</h1>
+        <form id="simulationForm">
+            <label for="memoryBlocks">Number of Memory Blocks:</label>
+            <br>
+            <input type="number" id="memoryBlocks" required>
+            <br>
+            <br>
+            <label for="inputSequence">Input Sequence:</label>
+            <br>
+            <input type="text" id="inputSequence" required>
+            <br>
+            <small>ex: 0,1,2,3,…,2n-1</small>
+            <br>
+            <small>separate values by a comma (,)</small>
+            <br>
+            <br>
+            <button type="submit">Simulate</button>
+        </form>
+
+        <div id="resultContainer" style="display:none;">
+            <h2>SIMMULATION RESULT</h2>
+            <table>
+                <tr>
+                <td>Memory Access Count</td>
+                <td><p id="memoryAccessCount"></p></td>
+                </tr>
+                <tr>
+                <td>Cache Hit Count</td>
+                <td><p id="cacheHitCount"></p></td>
+                </tr>
+                <tr>
+                <td>Cache Miss Count</td>
+                <td><p id="cacheMissCount"></p></td>
+                </tr>
+                <tr>
+                <td>Cache Hit Rate</td>
+                <td><p id="cacheHitRate"></p></td>
+                </tr>
+                <tr>
+                <td>Cache Miss Rate</td>
+                <td><p id="cacheMissRate"></p></td>
+                </tr>
+                <tr>
+                <td>Average Memory Access Time</td>
+                <td><p id="averageMemoryAccessTime"></p></td>
+                </tr>
+                <tr>
+                <td>Total Memory Access Time</td>
+                <td><p id="totalMemoryAccessTime"></p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
